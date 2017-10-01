@@ -1,0 +1,57 @@
+.drop-zone {
+    color: green;
+    padding: 20px;
+    border: 1px dashed black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.drop-zone:hover {
+    color: green;
+    border: 1px solid green;
+    -webkit-transform: scale(1.1);
+    background-color: #eef5ed;
+}
+
+.drop-zone.drop-zone-active {
+    /*color: white;*/
+    background-color: #eef5ed;
+    -webkit-transform: scale(1.1);
+}
+
+.drop-zone.drop-zone-accept {
+    /*color: white;*/
+    background-color: #eef5ed;
+    -webkit-transform: scale(1.1);
+}
+
+.drop-zone.drop-zone-reject {
+    /*color: white;*/
+    background-color: #eef5ed;
+    -webkit-transform: scale(1.1);
+}
+
+#App-UploadSequence .sequences {
+    margin-bottom: 1em;
+}
+
+#App-UploadSequence .sequences .sequence-container {
+    margin: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+#App-UploadSequence .sequences div textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10em;
+    max-width: 100%;
+    border-radius: 15px;
+    font-size: 0.7em;
+    padding: 1em;
+}
+
+#App-UploadSequence .sequences div h4 {
+    text-align: left;
+    margin: 0;
+}

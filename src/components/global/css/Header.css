@@ -1,0 +1,16 @@
+#App-Header{
+    margin-bottom: 2em;
+}
+
+#App-Header  h1, #App-Header  h2, #App-Header  h3 {
+    margin: 0;
+    color: #195619;
+}
+
+#App-Header .text-container{
+    padding-top: 1em;
+}
+
+#App-Header img{
+    float: left;
+}

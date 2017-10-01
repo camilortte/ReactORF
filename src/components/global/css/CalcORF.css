@@ -1,0 +1,31 @@
+.frame-block {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 2em;
+    background-color: #195619;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+.frame-block:hover {
+    -webkit-transform: scale(1.010);
+    background-color: #0f350f;
+}
+
+.frame-data{
+    margin-bottom: 2em;
+}
+
+.frame-data div table{
+    margin: auto;
+}
+
+.frame-data div textarea{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 15em;
+    max-width: 100%;
+    border-radius: 15px;
+    font-size: 0.7em;
+    padding: 1em;
+}
