@@ -3,7 +3,7 @@ ReactORF calc the ORF of Nucleotide Sequence. This project was bootstrapped with
 
 For more information see [http://unbackend.pro](http://unbackend.pro) 
 
-#[![ScreenShot](https://i.imgur.com/wH2bJQQ.gif)](Imagen)
+[![ScreenShot](https://i.imgur.com/wH2bJQQ.gif)](Imagen)
 
 ## Available Scripts
 
