@@ -41,7 +41,6 @@ export default class ORFAlgorithm  {
 
   readSequence(ORF){
     let current_sequence = null;
-    let gap = 0;
     switch (ORF){
       case '+3':
         current_sequence = "__" + this.sequence;
