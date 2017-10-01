@@ -175,6 +175,14 @@ export default class ORFAlgorithm  {
     console.log(this.ORF);
   }
 
+  calcORF(){
+    this.readSequence("+3");
+    this.readSequence("+2");
+    this.readSequence("+1");
+    this.readSequence("-1");
+    this.readSequence("-2");
+    this.readSequence("-3");
+  }
 
 
 }

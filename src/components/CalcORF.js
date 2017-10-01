@@ -29,15 +29,13 @@ class CalcORF extends Component {
   }
 
   _calcORF(){
-    let ORFalg = new ORFAlgorithm(this.state.sequence);
-    ORFalg.readSequence("+3");
-    ORFalg.readSequence("+2");
-    ORFalg.readSequence("+1");
-    ORFalg.readSequence("-1");
-    ORFalg.readSequence("-2");
-    ORFalg.readSequence("-3");
-    ORFalg.printORFResult();
-    this.setState({ORF_result: ORFalg.ORF, selectedSubSequence: ORFalg.bestCandidate});
+    this.setState({loadingAlgorithm: true}, () => {
+      setTimeout (() => {
+        let ORFalg = new ORFAlgorithm(this.state.sequence);
+        ORFalg.calcORF();
+        this.setState({ORF_result: ORFalg.ORF, selectedSubSequence: ORFalg.bestCandidate, loadingAlgorithm:false});
+      }, 800);
+    });
   }
 
   render() {
@@ -140,7 +138,7 @@ class CalcORF extends Component {
   }
 
   _onClickSubSequence(frame, index){
-    this.setState({selectedSubSequence: this.state.ORF_result[frame][index]})
+    this.setState({selectedSubSequence: this.state.ORF_result[frame][index]});
   }
 
   // Render the button
@@ -167,7 +165,8 @@ class CalcORF extends Component {
     if(this.props !== nextProps) {
       this.setState({
         sequence: nextProps.sequence,
-        ORF_result: null
+        ORF_result: null,
+        loadingAlgorithm: false
       });
     }
   }
