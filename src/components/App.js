@@ -4,7 +4,6 @@ import Header from './global/Header'
 import UploadSequence from './UploadSequence'
 import Footer from "./global/Footer";
 import CalcORF from "./CalcORF";
-import ORFAlgorithm from "./ORFAlgorithm";
 
 class App extends Component {
 
