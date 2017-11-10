@@ -33,6 +33,7 @@ class CalcORF extends Component {
       setTimeout (() => {
         let ORFalg = new ORFAlgorithm(this.state.sequence);
         ORFalg.calcORF();
+        console.log(ORFalg.ORF);
         this.setState({ORF_result: ORFalg.ORF, selectedSubSequence: ORFalg.bestCandidate, loadingAlgorithm:false});
       }, 800);
     });
@@ -95,7 +96,7 @@ class CalcORF extends Component {
           </table>
         </div>
         <div className="pure-u-12-24">
-          <textarea value={selectedSubSequence.subSequence}></textarea>
+          <textarea value={selectedSubSequence.subSequence}/>
           {searchOnBlast}
         </div>
       </article>
